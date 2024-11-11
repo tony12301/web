@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony_website</title>
+    <style>
+        /* 基本樣式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 導航欄樣式 */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin-right: 2rem;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: absolute;
+            left: 2rem;
+        }
+        footer {
+                background-color: #333;
+                color: white;
+                padding: 2rem 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .social-links a {
+                color: white;
+                margin: 0 1rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .social-links a:hover {
+                color: #00ff00;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;"><a href="index.html" style="text-decoration: none; color: white;">Tony_website</a></div>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">關於我</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">作品集</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+    <div class="project-container" style="margin-top: 80px; padding: 20px; background-color: #f8f9fa;">
+        <h1 style="text-align: center; color: #333; margin-bottom: 40px; font-size: 2.5rem;">打磚塊遊戲專案介紹</h1>
+        
+        <div class="project-content" style="max-width: 800px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">專案概述</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem;">這是一個使用HTML5 Canvas、CSS和JavaScript開發的經典打磚塊遊戲。玩家通過控制底部的擋板反彈球體來擊碎上方的磚塊，考驗反應力和操作技巧。</p>
+            
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">主要功能</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 滑鼠或鍵盤控制擋板移動
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 物理碰撞檢測系統
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 計分和生命值系統
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 多關卡設計和難度遞增
+                </li>
+            </ul>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">技術實現</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用HTML5 Canvas API進行遊戲畫面渲染，通過雙緩衝技術(Double Buffering)優化繪圖性能，實現每秒60幀的流暢動畫效果
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 採用CSS3 Flexbox和Grid佈局實現響應式UI設計，使用media queries適配不同屏幕尺寸，transform和transition實現流暢的動畫過渡效果
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 基於JavaScript ES6+開發遊戲物理引擎，實現向量運算、動量守恆、彈性碰撞等物理模型，使用四叉樹(Quadtree)優化碰撞檢測性能
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用requestAnimationFrame實現精確的遊戲時序控制，採用時間步長(Time Step)補償機制處理幀率波動，保證遊戲運行的穩定性
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 實現完整的遊戲狀態管理系統，包括關卡進度保存、高分記錄、遊戲配置等功能，使用localStorage進行本地數據持久化
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 設計模塊化的遊戲架構，採用發布訂閱模式處理遊戲事件，實現遊戲邏輯、渲染和輸入處理的解耦
+                </li>
+            </ul>
+
+            <div class="game-demo" style="margin: 40px 0; padding: 30px; background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">遊戲展示</h3>
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-gB9usmKFHA?si=oFz1PukXyjKppoog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <p style="text-align: center;">
+                    <a href="https://github.com/tony12301/20241023_41041224" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 25px; transition: all 0.3s ease; font-weight: bold;">
+                        <i style="margin-right: 8px;">📂</i>查看源代碼
+                    </a>
+                </p>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">開發心得</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">開發打磚塊遊戲讓我深入學習了Canvas繪圖和遊戲物理引擎的實現原理。在處理物體碰撞檢測和動畫效果時遇到了不少挑戰，但通過不斷優化和改進，最終實現了流暢的遊戲體驗。這個項目極大地提升了我在遊戲開發和性能優化方面的能力。</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <div style="margin-bottom: 1rem;">
+        <h3>聯絡方式</h3>
+        <p>電子郵件: zhengyo1230@gmail.com</p>
+        <p>電話: +886 966312309</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCEvdbLabJ4Y0_g3DTyTRY8A">YouTube</a>
+        <a href="https://github.com/zhengyo1230">GitHub</a>
+        <a href="https://www.instagram.com/tony.1230/">Instagram</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.8rem;">
+        <p>© 2024 Tony_website. 版權所有.</p>
+    </div>
+</footer>
+</html>

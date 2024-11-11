@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony_website</title>
+    <style>
+        /* 基本樣式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 導航欄樣式 */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin-right: 2rem;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: absolute;
+            left: 2rem;
+        }
+        footer {
+                background-color: #333;
+                color: white;
+                padding: 2rem 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .social-links a {
+                color: white;
+                margin: 0 1rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .social-links a:hover {
+                color: #00ff00;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;"><a href="index.html" style="text-decoration: none; color: white;">Tony_website</a></div>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">關於我</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">作品集</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+    <div class="project-container" style="margin-top: 80px; padding: 20px; background-color: #f8f9fa;">
+        <h1 style="text-align: center; color: #333; margin-bottom: 40px; font-size: 2.5rem;">JavaScript套件寶典專案介紹</h1>
+        
+        <div class="project-content" style="max-width: 800px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">專案概述</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem;">這是一個整合多種實用JavaScript套件的示範網站，展示了各種常用前端功能的實現方式。專案包含了動畫效果、表單驗證、數據可視化等多個實用模組。</p>
+            
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">主要功能</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 動態圖表展示（Chart.js）
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 表單驗證與處理（Formik）
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 動畫效果展示（GSAP）
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 日期處理功能（Moment.js）
+                </li>
+            </ul>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">技術實現</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用Chart.js實現多種類型的數據可視化圖表，包括折線圖、柱狀圖和圓餅圖等
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 整合Formik和Yup實現強大的表單驗證功能，提供即時反饋和錯誤提示
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 運用GSAP實現豐富的動畫效果，提升用戶體驗
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用Moment.js處理複雜的日期時間運算和格式化
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 採用模組化設計，實現代碼的高度復用性和可維護性
+                </li>
+            </ul>
+
+            <div class="game-demo" style="margin: 40px 0; padding: 30px; background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">專案展示</h3>
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bvrRs2FGhjs?si=mQLUxZXZk_AbvYzN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <p style="text-align: center;">
+                    <a href="https://github.com/tony12301/20241030_41041224" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 25px; transition: all 0.3s ease; font-weight: bold;">
+                        <i style="margin-right: 8px;">📂</i>查看源代碼
+                    </a>
+                </p>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">開發心得</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">通過開發這個JavaScript套件展示專案，我深入了解了多個主流前端套件的使用方法和最佳實踐。這不僅提升了我的前端開發技能，也讓我更好地理解了如何選擇和整合適合項目需求的工具。特別是在處理數據可視化和表單驗證方面，獲得了寶貴的實戰經驗。</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <div style="margin-bottom: 1rem;">
+        <h3>聯絡方式</h3>
+        <p>電子郵件: zhengyo1230@gmail.com</p>
+        <p>電話: +886 966312309</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCEvdbLabJ4Y0_g3DTyTRY8A">YouTube</a>
+        <a href="https://github.com/zhengyo1230">GitHub</a>
+        <a href="https://www.instagram.com/tony.1230/">Instagram</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.8rem;">
+        <p>© 2024 Tony_website. 版權所有.</p>
+    </div>
+</footer>
+</html>

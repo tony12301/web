@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony_website</title>
+    <style>
+        /* 基本樣式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 導航欄樣式 */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin-right: 2rem;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: absolute;
+            left: 2rem;
+        }
+        footer {
+                background-color: #333;
+                color: white;
+                padding: 2rem 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .social-links a {
+                color: white;
+                margin: 0 1rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .social-links a:hover {
+                color: #00ff00;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;"><a href="index.html" style="text-decoration: none; color: white;">Tony_website</a></div>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">關於我</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">作品集</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+    <div class="project-container" style="margin-top: 80px; padding: 20px; background-color: #f8f9fa;">
+        <h1 style="text-align: center; color: #333; margin-bottom: 40px; font-size: 2.5rem;">記憶卡片配對遊戲專案介紹</h1>
+        
+        <div class="project-content" style="max-width: 800px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">專案概述</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem;">這是一個使用HTML、CSS和JavaScript開發的記憶卡片配對遊戲。玩家需要翻開卡片並找到相同的圖案配對，考驗記憶力和觀察力的有趣遊戲。</p>
+            
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">主要功能</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 卡片翻轉動畫效果
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 隨機排列卡片位置
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 計時和步數統計
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">▶</span> 遊戲完成判定和重新開始功能
+                </li>
+            </ul>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">技術實現</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用HTML5 semantic elements構建遊戲界面，運用grid和flexbox實現卡片網格佈局，確保良好的結構性和可維護性
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> CSS3 transform和transition實現3D卡片翻轉效果，使用media queries實現響應式設計，適配不同設備屏幕
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> JavaScript ES6+特性實現遊戲核心邏輯，包括Fisher-Yates洗牌算法、Promise異步處理、localStorage本地數據存儲等
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 使用事件委託優化性能，採用模塊化設計模式組織代碼，實現計時器、得分系統等功能
+                </li>
+                <li style="margin: 10px 0; padding-left: 25px; position: relative; color: #555;">
+                    <span style="position: absolute; left: 0; color: #3498db;">⚡</span> 實現錯誤處理機制和遊戲狀態管理，確保遊戲穩定運行和良好的用戶體驗
+                </li>
+            </ul>
+
+            <div class="game-demo" style="margin: 40px 0; padding: 30px; background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">遊戲展示</h3>
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_CYlNJV9Ohw?si=ebKr45OhFhe-dNv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <p style="text-align: center;">
+                    <a href="https://github.com/tony12301/20240925_41041224" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 25px; transition: all 0.3s ease; font-weight: bold;">
+                        <i style="margin-right: 8px;">📂</i>查看源代碼
+                    </a>
+                </p>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px;">開發心得</h2>
+            <p style="line-height: 1.8; color: #555; font-size: 1.1rem; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">開發這個記憶卡片配對遊戲讓我更深入理解了JavaScript的陣列操作和DOM事件處理。特別是在實現卡片翻轉動畫和遊戲狀態管理時，學習到了很多關於CSS3動畫和JavaScript計時器的知識。這個專案不僅提升了我的前端開發技能，也讓我更了解如何設計有趣且具有挑戰性的遊戲邏輯。</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <div style="margin-bottom: 1rem;">
+        <h3>聯絡方式</h3>
+        <p>電子郵件: zhengyo1230@gmail.com</p>
+        <p>電話: +886 966312309</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCEvdbLabJ4Y0_g3DTyTRY8A">YouTube</a>
+        <a href="https://github.com/zhengyo1230">GitHub</a>
+        <a href="https://www.instagram.com/tony.1230/">Instagram</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.8rem;">
+        <p>© 2024 Tony_website. 版權所有.</p>
+    </div>
+</footer>
+</html>
